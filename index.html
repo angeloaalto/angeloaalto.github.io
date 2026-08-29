@@ -84,7 +84,19 @@
       cursor: pointer;
     }
 
-    .hero {
+    .hero {.hero-image {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.hero-image img {
+  width: 360px;
+  height: 460px;
+  object-fit: cover;
+  border-radius: 18px;
+  display: block;
+}
       min-height: 680px;
       display: flex;
       align-items: center;
@@ -264,7 +276,16 @@
       font-size: 13px;
     }
 
-    @media (max-width: 800px) {
+    @media (max-width: 800px) {.hero-image {
+  justify-content: flex-start;
+  margin-top: 40px;
+}
+
+.hero-image img {
+  width: 100%;
+  max-width: 360px;
+  height: 440px;
+}
 
       .nav-links a {
         display: none;
