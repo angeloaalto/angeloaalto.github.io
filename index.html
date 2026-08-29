@@ -4,19 +4,19 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Angelo Aalto — Myynnin ammattilainen</title>
+  <title>Angelo Aalto</title>
 
   <meta
     name="description"
-    content="Angelo Aalto — myynnin ammattilainen ja yrittäjä."
+    content="Angelo Aalto — Myynnin ammattilainen · Yrittäjä"
   >
 
   <style>
     :root {
       --bg: #0a0a0a;
       --text: #f5f5f5;
-      --muted: #999;
-      --line: #252525;
+      --muted: #999999;
+      --line: #262626;
       --accent: #dfff52;
       --max-width: 1100px;
     }
@@ -44,23 +44,17 @@
     }
 
     .container {
-      width: min(
-        var(--max-width),
-        calc(100% - 40px)
-      );
-
+      width: min(var(--max-width), calc(100% - 40px));
       margin: 0 auto;
     }
 
-    /* NAVIGATION */
+    /* NAV */
 
     nav {
       height: 80px;
-
       display: flex;
       align-items: center;
       justify-content: space-between;
-
       border-bottom: 1px solid var(--line);
     }
 
@@ -78,9 +72,7 @@
       display: flex;
       align-items: center;
       gap: 28px;
-
       color: var(--muted);
-
       font-size: 14px;
     }
 
@@ -89,16 +81,12 @@
     }
 
     .language {
+      padding: 7px 13px;
       border: 1px solid var(--line);
+      border-radius: 999px;
       background: transparent;
       color: var(--text);
-
-      border-radius: 999px;
-
-      padding: 7px 13px;
-
       cursor: pointer;
-
       font-size: 13px;
     }
 
@@ -106,77 +94,52 @@
 
     .hero {
       min-height: 680px;
-
       display: grid;
-
       grid-template-columns: 1.25fr 0.75fr;
-
       gap: 70px;
-
       align-items: center;
-
       padding: 90px 0;
     }
 
     .eyebrow {
       color: var(--accent);
-
       font-size: 12px;
-
       font-weight: 700;
-
       text-transform: uppercase;
-
       letter-spacing: 0.12em;
     }
 
     h1 {
       max-width: 800px;
-
       margin: 22px 0 30px;
-
       font-size: clamp(54px, 8vw, 90px);
-
       line-height: 0.94;
-
       letter-spacing: -0.07em;
     }
 
     .hero-text {
       max-width: 620px;
-
       color: var(--muted);
-
       font-size: 19px;
     }
 
     .buttons {
       display: flex;
-
       gap: 12px;
-
       margin-top: 34px;
-
-      flex-wrap: wrap;
     }
 
     .button {
       display: inline-block;
-
       padding: 13px 19px;
-
       border: 1px solid var(--line);
-
       border-radius: 7px;
-
       font-weight: 700;
     }
 
     .button-primary {
       background: var(--accent);
-
       color: #0a0a0a;
-
       border-color: var(--accent);
     }
 
@@ -184,18 +147,14 @@
 
     .hero-image {
       display: flex;
-
       justify-content: center;
     }
 
     .hero-image img {
       width: 300px;
       height: 380px;
-
       object-fit: cover;
-
       border-radius: 18px;
-
       display: block;
     }
 
@@ -203,33 +162,26 @@
 
     section {
       padding: 90px 0;
-
       border-top: 1px solid var(--line);
     }
 
     .section-title {
       margin-bottom: 45px;
-
       font-size: 48px;
-
       line-height: 1;
-
       letter-spacing: -0.05em;
     }
 
-    /* RESULTS */
+    /* NÄYTÖT */
 
     .stats {
       display: grid;
-
       grid-template-columns: repeat(4, 1fr);
-
       border: 1px solid var(--line);
     }
 
     .stat {
       padding: 30px;
-
       border-right: 1px solid var(--line);
     }
 
@@ -239,71 +191,48 @@
 
     .stat-number {
       display: block;
-
       font-size: 28px;
-
       font-weight: 800;
-
       letter-spacing: -0.05em;
     }
 
     .stat-label {
       display: block;
-
       margin-top: 7px;
-
       color: var(--muted);
-
       font-size: 14px;
     }
 
-    /* EXPERIENCE */
+    /* KOKEMUS */
 
     .timeline-item {
       display: grid;
-
       grid-template-columns: 160px 1fr;
-
       gap: 35px;
-
       padding: 30px 0;
-
       border-bottom: 1px solid var(--line);
     }
 
     .timeline-year {
       color: var(--accent);
-
       font-weight: 800;
     }
 
     .timeline-item h3 {
-      margin-bottom: 8px;
-
       font-size: 23px;
     }
 
-    .timeline-item p {
-      color: var(--muted);
-
-      max-width: 700px;
-    }
-
-    /* STRENGTHS */
+    /* VAHVUUDET */
 
     .strengths {
       display: grid;
-
       grid-template-columns: repeat(2, 1fr);
-
       border: 1px solid var(--line);
     }
 
     .strength {
       padding: 28px;
-
       border-right: 1px solid var(--line);
-
       border-bottom: 1px solid var(--line);
     }
 
@@ -319,23 +248,18 @@
       font-size: 21px;
     }
 
-    /* SALES ENVIRONMENTS */
+    /* MYYNNIN YMPÄRISTÖT */
 
     .tags {
       display: flex;
-
       flex-wrap: wrap;
-
       gap: 10px;
     }
 
     .tag {
       padding: 11px 16px;
-
       border: 1px solid var(--line);
-
       border-radius: 999px;
-
       color: var(--muted);
     }
 
@@ -343,31 +267,14 @@
 
     .statement {
       padding: 130px 0;
-
       text-align: center;
-    }
-
-    .statement p {
-      margin-bottom: 25px;
-
-      color: var(--muted);
-
-      font-size: 13px;
-
-      text-transform: uppercase;
-
-      letter-spacing: 0.12em;
     }
 
     .statement h2 {
       max-width: 900px;
-
       margin: 0 auto;
-
       font-size: clamp(48px, 8vw, 88px);
-
       line-height: 0.95;
-
       letter-spacing: -0.07em;
     }
 
@@ -375,31 +282,24 @@
       color: var(--accent);
     }
 
-    /* CONTACT */
+    /* CTA */
 
     .contact {
       padding: 60px;
-
       background: var(--accent);
-
       color: #0a0a0a;
-
       border-radius: 16px;
     }
 
     .contact h2 {
       max-width: 800px;
-
       margin-bottom: 30px;
-
       font-size: clamp(42px, 6vw, 68px);
-
       line-height: 1;
-
       letter-spacing: -0.06em;
     }
 
-    .contact-button {
+    .contact .button {
       border-color: #0a0a0a;
     }
 
@@ -407,27 +307,21 @@
 
     footer {
       display: flex;
-
       justify-content: space-between;
-
       padding: 35px 0;
-
       color: var(--muted);
-
       font-size: 13px;
     }
 
     /* MOBILE */
 
     @media (max-width: 800px) {
-
       .nav-links a {
         display: none;
       }
 
       .hero {
         grid-template-columns: 1fr;
-
         padding: 70px 0;
       }
 
@@ -465,7 +359,6 @@
 
       .timeline-item {
         grid-template-columns: 1fr;
-
         gap: 8px;
       }
 
@@ -475,49 +368,32 @@
 
       footer {
         flex-direction: column;
-
         gap: 8px;
       }
     }
   </style>
 </head>
 
-
 <body>
 
   <div class="container">
 
-    <!-- NAVIGATION -->
+    <!-- NAV -->
 
     <nav>
-
       <a href="#" class="logo">
         ANGELO <span>AALTO</span>
       </a>
 
       <div class="nav-links">
+        <a href="#experience">Kokemus</a>
+        <a href="#strengths">Vahvuudet</a>
+        <a href="#contact">Yhteys</a>
 
-        <a href="#experience">
-          Kokemus
-        </a>
-
-        <a href="#strengths">
-          Vahvuudet
-        </a>
-
-        <a href="#contact">
-          Yhteys
-        </a>
-
-        <button
-          class="language"
-          onclick="toggleLanguage()"
-        >
+        <button class="language">
           EN
         </button>
-
       </div>
-
     </nav>
 
 
@@ -536,30 +412,11 @@
         </h1>
 
         <p class="hero-text">
-          Myynnin ammattilainen, joka auttaa yrityksiä
-          kasvattamaan myyntiä ja liikevaihtoa.
+          Myynnin ammattilainen, joka auttaa yrityksiä kasvattamaan
+          myyntiä ja liikevaihtoa.
         </p>
 
-        <div class="buttons">
-
-          <a
-            href="#contact"
-            class="button button-primary"
-          >
-            Ota yhteyttä
-          </a>
-
-          <a
-            href="#experience"
-            class="button"
-          >
-            Kokemus
-          </a>
-
-        </div>
-
       </div>
-
 
       <div class="hero-image">
 
@@ -580,54 +437,46 @@
       <div class="stats">
 
         <div class="stat">
-
-          <span class="stat-number">
-            10+ vuotta
-          </span>
-
-          <span class="stat-label">
-            myyntikokemusta
-          </span>
-
-        </div>
-
-
-        <div class="stat">
-
-          <span class="stat-number">
-            6+ vuotta
-          </span>
-
-          <span class="stat-label">
-            yrittäjänä
-          </span>
-
-        </div>
-
-
-        <div class="stat">
-
           <span class="stat-number">
             10 000 €+ / kk
           </span>
 
           <span class="stat-label">
-            myyntiä kylmään listaan
+            Myyntiä kylmään listaan
           </span>
-
         </div>
 
 
         <div class="stat">
-
           <span class="stat-number">
-            Tasaisesti
+            10+ vuotta
           </span>
 
           <span class="stat-label">
-            kärkitasolla
+            Myyntikokemusta
+          </span>
+        </div>
+
+
+        <div class="stat">
+          <span class="stat-number">
+            6+ vuotta
           </span>
 
+          <span class="stat-label">
+            Yrittäjänä
+          </span>
+        </div>
+
+
+        <div class="stat">
+          <span class="stat-number">
+            Tasaisesti kärkitasolla
+          </span>
+
+          <span class="stat-label">
+            Läpi myyntiuran
+          </span>
         </div>
 
       </div>
@@ -651,15 +500,9 @@
         </div>
 
         <div>
-
           <h3>
             Suomen Telecenter / Soldem
           </h3>
-
-          <p>
-            Myyntiuran alku.
-          </p>
-
         </div>
 
       </div>
@@ -672,15 +515,9 @@
         </div>
 
         <div>
-
           <h3>
             Telia
           </h3>
-
-          <p>
-            Myymälämyynti.
-          </p>
-
         </div>
 
       </div>
@@ -693,16 +530,9 @@
         </div>
 
         <div>
-
           <h3>
             Myynti Aalto · Yrittäjä
           </h3>
-
-          <p>
-            Myynnin alihankintaa ja erilaisia
-            myyntiprojekteja.
-          </p>
-
         </div>
 
       </div>
@@ -722,39 +552,27 @@
       <div class="strengths">
 
         <div class="strength">
-          <h3>
-            Tarpeiden tunnistaminen
-          </h3>
+          <h3>Tarpeiden tunnistaminen</h3>
         </div>
 
         <div class="strength">
-          <h3>
-            Vahva kommunikointi
-          </h3>
+          <h3>Vahva kommunikointi</h3>
         </div>
 
         <div class="strength">
-          <h3>
-            Ihmisten lukeminen
-          </h3>
+          <h3>Ihmisten lukeminen</h3>
         </div>
 
         <div class="strength">
-          <h3>
-            Kaupallinen ajattelu
-          </h3>
+          <h3>Kaupallinen ajattelu</h3>
         </div>
 
         <div class="strength">
-          <h3>
-            Tavoitteellinen tekeminen
-          </h3>
+          <h3>Tavoitteellinen tekeminen</h3>
         </div>
 
         <div class="strength">
-          <h3>
-            Tasainen suorituskyky
-          </h3>
+          <h3>Tasainen suorituskyky</h3>
         </div>
 
       </div>
@@ -773,41 +591,15 @@
 
       <div class="tags">
 
-        <span class="tag">
-          B2B
-        </span>
-
-        <span class="tag">
-          B2C
-        </span>
-
-        <span class="tag">
-          Uusasiakashankinta
-        </span>
-
-        <span class="tag">
-          Asiakkuuksien rakentaminen
-        </span>
-
-        <span class="tag">
-          Kylmäsoitto
-        </span>
-
-        <span class="tag">
-          Puhelinmyynti
-        </span>
-
-        <span class="tag">
-          Business-tapaamiset
-        </span>
-
-        <span class="tag">
-          Kasvokkainen myynti
-        </span>
-
-        <span class="tag">
-          Ajanvaraus
-        </span>
+        <span class="tag">B2B</span>
+        <span class="tag">B2C</span>
+        <span class="tag">Uusasiakashankinta</span>
+        <span class="tag">Asiakkuuksien rakentaminen</span>
+        <span class="tag">Kylmäsoitto</span>
+        <span class="tag">Puhelinmyynti</span>
+        <span class="tag">Business-tapaamiset</span>
+        <span class="tag">Kasvokkainen myynti</span>
+        <span class="tag">Ajanvaraus</span>
 
       </div>
 
@@ -818,10 +610,6 @@
 
     <section class="statement">
 
-      <p>
-        Henkilöbrändi
-      </p>
-
       <h2>
         Tuote voi vaihtua.
         <br>
@@ -831,20 +619,19 @@
     </section>
 
 
-    <!-- CONTACT -->
+    <!-- CTA -->
 
     <section id="contact">
 
       <div class="contact">
 
         <h2>
-          Onko sinulla myyntiä,
-          joka tarvitsee tekijän?
+          Onko sinulla myyntiä, joka tarvitsee tekijän?
         </h2>
 
         <a
           href="mailto:angelo.aalto@gmail.com"
-          class="button contact-button"
+          class="button"
         >
           Ota yhteyttä
         </a>
@@ -869,25 +656,6 @@
     </footer>
 
   </div>
-
-
-  <script>
-
-    function toggleLanguage() {
-
-      /*
-        Englanninkielinen versio tehdään
-        seuraavassa vaiheessa kokonaisena
-        versiona, eikä puolikkaana käännöksenä.
-      */
-
-      alert(
-        "English version rakennetaan seuraavassa vaiheessa."
-      );
-
-    }
-
-  </script>
 
 </body>
 </html>
