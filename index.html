@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Angelo Aalto — Sales Professional & Entrepreneur</title>
+
+  <meta
+    name="description"
+    content="Angelo Aalto — myynnin ammattilainen ja yrittäjä. Myyntikokemusta vuodesta 2016 ja yrittäjänä vuodesta 2020."
+  >
+
+  <style>
+    :root {
+      --background: #090a0c;
+      --surface: #111318;
+      --text: #f4f4f1;
+      --muted: #9b9da5;
+      --line: #292c33;
+      --accent: #dfff52;
+      --max-width: 1120px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background: var(--background);
+      color: var(--text);
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.6;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .container {
+      width: min(var(--max-width), calc(100% - 48px));
+      margin: auto;
+    }
+
+    nav {
+      height: 80px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .logo {
+      font-size: 18px;
+      font-weight: 800;
+      letter-spacing: -0.03em;
+    }
+
+    .logo span {
+      color: var(--accent);
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 28px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .language {
+      background: transparent;
+      border: 1px solid var(--line);
+      color: var(--text);
+      padding: 7px 12px;
+      border-radius: 50px;
+      cursor: pointer;
+    }
+
+    .hero {
+      min-height: 680px;
+      display: flex;
+      align-items: center;
+      padding: 100px 0;
+    }
+
+    .eyebrow {
+      color: var(--accent);
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      font-size: 13px;
+      font-weight: 700;
+    }
+
+    h1 {
+      max-width: 850px;
+      font-size: clamp(54px, 9vw, 100px);
+      line-height: 0.95;
+      letter-spacing: -0.07em;
+      margin: 22px 0 30px;
+    }
+
+    .hero-text {
+      max-width: 680px;
+      color: var(--muted);
+      font-size: 20px;
+    }
+
+    .buttons {
+      display: flex;
+      gap: 12px;
+      margin-top: 36px;
+      flex-wrap: wrap;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 13px 19px;
+      border-radius: 7px;
+      border: 1px solid var(--line);
+      font-weight: 700;
+    }
+
+    .button-primary {
+      background: var(--accent);
+      color: #090a0c;
+      border-color: var(--accent);
+    }
+
+    section {
+      padding: 90px 0;
+      border-top: 1px solid var(--line);
+    }
+
+    .section-title {
+      font-size: 48px;
+      line-height: 1;
+      letter-spacing: -0.05em;
+      margin-bottom: 45px;
+    }
+
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      border: 1px solid var(--line);
+    }
+
+    .stat {
+      padding: 30px;
+      border-right: 1px solid var(--line);
+    }
+
+    .stat:last-child {
+      border-right: none;
+    }
+
+    .stat-number {
+      display: block;
+      font-size: 38px;
+      font-weight: 800;
+      letter-spacing: -0.05em;
+    }
+
+    .stat-label {
+      display: block;
+      color: var(--muted);
+      margin-top: 6px;
+      font-size: 14px;
+    }
+
+    .timeline-item {
+      display: grid;
+      grid-template-columns: 160px 1fr;
+      gap: 35px;
+      padding: 30px 0;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .timeline-year {
+      color: var(--accent);
+      font-weight: 800;
+    }
+
+    .timeline-item h3 {
+      font-size: 23px;
+      margin-bottom: 8px;
+    }
+
+    .timeline-item p {
+      max-width: 750px;
+      color: var(--muted);
+    }
+
+    .skills {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 15px;
+    }
+
+    .skill {
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      padding: 28px;
+    }
+
+    .skill h3 {
+      margin-bottom: 8px;
+      font-size: 21px;
+    }
+
+    .skill p {
+      color: var(--muted);
+    }
+
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .tag {
+      border: 1px solid var(--line);
+      border-radius: 50px;
+      padding: 11px 16px;
+      color: var(--muted);
+    }
+
+    .contact {
+      background: var(--accent);
+      color: #090a0c;
+      padding: 60px;
+      border-radius: 16px;
+    }
+
+    .contact h2 {
+      font-size: clamp(40px, 6vw, 65px);
+      line-height: 1;
+      letter-spacing: -0.06em;
+      margin-bottom: 18px;
+    }
+
+    .contact p {
+      max-width: 650px;
+      margin-bottom: 30px;
+    }
+
+    .contact .button {
+      border-color: #090a0c;
+    }
+
+    footer {
+      padding: 35px 0;
+      display: flex;
+      justify-content: space-between;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    @media (max-width: 800px) {
+
+      .nav-links a {
+        display: none;
+      }
+
+      .hero {
+        padding: 75px 0;
+      }
+
+      .stats {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .stat {
+        border-bottom: 1px solid var(--line);
+      }
+
+      .skills {
+        grid-template-columns: 1fr;
+      }
+
+      .timeline-item {
+        grid-template-columns: 1fr;
+        gap: 8px;
+      }
+
+      .contact {
+        padding: 40px 28px;
+      }
+
+      footer {
+        flex-direction: column;
+        gap: 8px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="container">
+
+  <nav>
+    <a href="#" class="logo">
+      ANGELO <span>AALTO</span>
+    </a>
+
+    <div class="nav-links">
+      <a href="#experience">Kokemus</a>
+      <a href="#skills">Osaaminen</a>
+      <a href="#contact">Yhteys</a>
+
+      <button class="language" onclick="toggleLanguage()">
+        EN
+      </button>
+    </div>
+  </nav>
+
+
+  <header class="hero">
+
+    <div>
+
+      <div class="eyebrow" id="eyebrow">
+        Myynnin ammattilainen · Yrittäjä
+      </div>
+
+      <h1 id="headline">
+        Myyntiä, joka muuttuu tuloksiksi.
+      </h1>
+
+      <p class="hero-text" id="heroText">
+        Myyntiä vuodesta 2016 ja yrittäjänä vuodesta 2020.
+        Kokemusta puhelin- ja myymälämyynnistä sekä useista
+        erilaisista myyntiprojekteista.
+      </p>
+
+      <div class="buttons">
+
+        <a class="button button-primary" href="#contact" id="contactButton">
+          Ota yhteyttä
+        </a>
+
+        <a class="button" href="#experience" id="experienceButton">
+          Tutustu kokemukseen
+        </a>
+
+      </div>
+
+    </div>
+
+  </header>
+
+
+  <section>
+
+    <div class="stats">
+
+      <div class="stat">
+        <span class="stat-number">10+</span>
+        <span class="stat-label" id="stat1">
+          vuotta myyntikokemusta
+        </span>
+      </div>
+
+      <div class="stat">
+        <span class="stat-number">6+</span>
+        <span class="stat-label" id="stat2">
+          vuotta yrittäjänä
+        </span>
+      </div>
+
+      <div class="stat">
+        <span class="stat-number">8 000 €</span>
+        <span class="stat-label" id="stat3">
+          paras kuukausimyynti sähkösopimuksissa
+        </span>
+      </div>
+
+      <div class="stat">
+        <span class="stat-number">Top 3–5</span>
+        <span class="stat-label" id="stat4">
+          pull-% omassa myyntitalossa
+        </span>
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <section id="experience">
+
+    <h2 class="section-title" id="experienceTitle">
+      Kokemus
+    </h2>
+
+
+    <div class="timeline-item">
+
+      <div class="timeline-year">
+        2016
+      </div>
+
+      <div>
+        <h3>Suomen Telecenter / Soldem</h3>
+
+        <p id="experience1">
+          Aloitin myyntiurani puhelinmyynnissä. Myin puhelin-
+          ja nettiliittymiä ja rakensin pohjan tulokselliselle
+          myyntityölle.
+        </p>
+      </div>
+
+    </div>
+
+
+    <div class="timeline-item">
+
+      <div class="timeline-year">
+        Myöhemmin
+      </div>
+
+      <div>
+
+        <h3>Telia · Myymälämyynti</h3>
+
+        <p id="experience2">
+          Siirryin myymäläympäristöön, jossa kehitin
+          kasvokkaisen asiakaskohtaamisen, tarpeiden
+          tunnistamisen ja ratkaisumyynnin taitoja.
+        </p>
+
+      </div>
+
+    </div>
+
+
+    <div class="timeline-item">
+
+      <div class="timeline-year">
+        2020
+      </div>
+
+      <div>
+
+        <h3>Myynti Aalto · Yrittäjyys</h3>
+
+        <p id="experience3">
+          Sain mahdollisuuden siirtyä myynnin alihankkijaksi
+          ja ryhdyin yrittäjäksi. Sen jälkeen olen työskennellyt
+          useiden tuotteiden ja myyntiprojektien parissa.
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <section id="skills">
+
+    <h2 class="section-title" id="skillsTitle">
+      Osaaminen
+    </h2>
+
+
+    <div class="skills">
+
+      <div class="skill">
+
+        <h3 id="skill1Title">
+          Ihmisten lukeminen
+        </h3>
+
+        <p id="skill1Text">
+          Tunnistan erilaisia asiakkaita ja mukautan
+          lähestymistapani tilanteeseen.
+        </p>
+
+      </div>
+
+
+      <div class="skill">
+
+        <h3 id="skill2Title">
+          Kommunikointi
+        </h3>
+
+        <p id="skill2Text">
+          Vahvat puhelahjat ja kyky rakentaa luonteva
+          keskustelu nopeasti.
+        </p>
+
+      </div>
+
+
+      <div class="skill">
+
+        <h3 id="skill3Title">
+          Kuunteleminen
+        </h3>
+
+        <p id="skill3Text">
+          Hyvä myynti alkaa kuuntelemisesta — ei valmiin
+          puheen toistamisesta.
+        </p>
+
+      </div>
+
+
+      <div class="skill">
+
+        <h3 id="skill4Title">
+          Tarpeiden tunnistaminen
+        </h3>
+
+        <p id="skill4Text">
+          Etsin asiakkaan todellisen tarpeen ja rakennan
+          tarjouksen sen ympärille.
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <section>
+
+    <h2 class="section-title" id="productsTitle">
+      Mitä olen myynyt?
+    </h2>
+
+    <div class="tags">
+
+      <span class="tag">Puhelin- ja nettiliittymät</span>
+      <span class="tag">Sähkösopimukset</span>
+      <span class="tag">Sähköautojen latauspisteet</span>
+      <span class="tag">Aurinkopaneelien ajanvaraus</span>
+      <span class="tag">Uusasiakashankinta</span>
+      <span class="tag">Puhelinmyynti</span>
+      <span class="tag">Myymälämyynti</span>
+
+    </div>
+
+  </section>
+
+
+  <section id="contact">
+
+    <div class="contact">
+
+      <h2 id="contactTitle">
+        Etsitkö myynnin tekijää?
+      </h2>
+
+      <p id="contactText">
+        Olen avoin sekä uusille työmahdollisuuksille että
+        myynnin yhteistyö- ja alihankintaprojekteille.
+        Jos etsit tuloshakuista myyjää, jutellaan.
+      </p>
+
+      <a
+        class="button"
+        href="mailto:hello@myyntiaalto.fi"
+        id="emailButton"
+      >
+        Lähetä sähköpostia
+      </a>
+
+    </div>
+
+  </section>
+
+
+  <footer>
+
+    <span>
+      © 2026 Myynti Aalto
+    </span>
+
+    <span>
+      Angelo Aalto · Sales Professional
+    </span>
+
+  </footer>
+
+</div>
+
+
+<script>
+
+let english = false;
+
+function toggleLanguage() {
+
+  english = !english;
+
+  const languageButton = document.querySelector(".language");
+
+  languageButton.textContent = english ? "FI" : "EN";
+
+  if (english) {
+
+    document.documentElement.lang = "en";
+
+    document.getElementById("eyebrow").textContent =
+      "Sales Professional · Entrepreneur";
+
+    document.getElementById("headline").textContent =
+      "Sales that turns into results.";
+
+    document.getElementById("heroText").textContent =
+      "In sales since 2016 and an entrepreneur since 2020. " +
+      "Experience in phone sales, retail sales and a range " +
+      "of different sales projects.";
+
+    document.getElementById("contactButton").textContent =
+      "Get in touch";
+
+    document.getElementById("experienceButton").textContent =
+      "View experience";
+
+    document.getElementById("stat1").textContent =
+      "years of sales experience";
+
+    document.getElementById("stat2").textContent =
+      "years as an entrepreneur";
+
+    document.getElementById("stat3").textContent =
+      "best monthly sales in electricity contracts";
+
+    document.getElementById("stat4").textContent =
+      "pull-rate ranking in my sales organization";
+
+    document.getElementById("experienceTitle").textContent =
+      "Experience";
+
+    document.getElementById("experience1").textContent =
+      "I started my sales career in phone sales, selling " +
+      "mobile and internet subscriptions and building a " +
+      "foundation in performance-driven sales.";
+
+    document.getElementById("experience2").textContent =
+      "I moved into retail sales, developing face-to-face " +
+      "customer interaction, needs discovery and " +
+      "solution-selling skills.";
+
+    document.getElementById("experience3").textContent =
+      "I had the opportunity to work as a sales subcontractor " +
+      "and became an entrepreneur. Since then I have worked " +
+      "across multiple products and sales projects.";
+
+    document.getElementById("skillsTitle").textContent =
+      "Strengths";
+
+    document.getElementById("skill1Title").textContent =
+      "Reading people";
+
+    document.getElementById("skill1Text").textContent =
+      "I recognize different customer types and adapt " +
+      "my approach to the situation.";
+
+    document.getElementById("skill2Title").textContent =
+      "Communication";
+
+    document.getElementById("skill2Text").textContent =
+      "Strong verbal communication and the ability to " +
+      "build a natural conversation quickly.";
+
+    document.getElementById("skill3Title").textContent =
+      "Listening";
+
+    document.getElementById("skill3Text").textContent =
+      "Good sales starts with listening — not repeating a script.";
+
+    document.getElementById("skill4Title").textContent =
+      "Needs discovery";
+
+    document.getElementById("skill4Text").textContent =
+      "I identify the customer's real need and build " +
+      "the offer around it.";
+
+    document.getElementById("productsTitle").textContent =
+      "What I have sold";
+
+    document.getElementById("contactTitle").textContent =
+      "Looking for a sales professional?";
+
+    document.getElementById("contactText").textContent =
+      "I am open to new career opportunities as well as " +
+      "sales partnerships and subcontracting projects. " +
+      "If you are looking for a performance-driven salesperson, " +
+      "let's talk.";
+
+    document.getElementById("emailButton").textContent =
+      "Send an email";
+
+  } else {
+
+    location.reload();
+
+  }
+
+}
+
+</script>
+
+</body>
+</html>
