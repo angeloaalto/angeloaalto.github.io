@@ -8,10 +8,11 @@
 
   <meta
     name="description"
-    content="Angelo Aalto — myynnin ammattilainen ja yrittäjä. Myyntikokemusta vuodesta 2016 ja yrittäjänä vuodesta 2020."
+    content="Angelo Aalto — myynnin ammattilainen ja yrittäjä."
   >
 
   <style>
+
     :root {
       --background: #090a0c;
       --surface: #111318;
@@ -75,6 +76,10 @@
       font-size: 14px;
     }
 
+    .nav-links a:hover {
+      color: var(--text);
+    }
+
     .language {
       background: transparent;
       border: 1px solid var(--line);
@@ -84,23 +89,13 @@
       cursor: pointer;
     }
 
-    .hero {.hero-image {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-}
-
-.hero-image img {
-  width: 300px;
-  height: 380px;
-  object-fit: cover;
-  border-radius: 18px;
-  display: block;
-}
-      min-height: 680px;
-      display: flex;
+    .hero {
+      min-height: 650px;
+      display: grid;
+      grid-template-columns: 1.35fr 0.65fr;
+      gap: 70px;
       align-items: center;
-      padding: 100px 0;
+      padding: 90px 0;
     }
 
     .eyebrow {
@@ -112,8 +107,8 @@
     }
 
     h1 {
-      max-width: 850px;
-      font-size: clamp(54px, 9vw, 100px);
+      max-width: 800px;
+      font-size: clamp(54px, 8vw, 92px);
       line-height: 0.95;
       letter-spacing: -0.07em;
       margin: 22px 0 30px;
@@ -122,13 +117,13 @@
     .hero-text {
       max-width: 680px;
       color: var(--muted);
-      font-size: 20px;
+      font-size: 19px;
     }
 
     .buttons {
       display: flex;
       gap: 12px;
-      margin-top: 36px;
+      margin-top: 34px;
       flex-wrap: wrap;
     }
 
@@ -144,6 +139,20 @@
       background: var(--accent);
       color: #090a0c;
       border-color: var(--accent);
+    }
+
+    .hero-image {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .hero-image img {
+      width: 300px;
+      height: 380px;
+      object-fit: cover;
+      border-radius: 18px;
+      display: block;
     }
 
     section {
@@ -175,7 +184,7 @@
 
     .stat-number {
       display: block;
-      font-size: 38px;
+      font-size: 34px;
       font-weight: 800;
       letter-spacing: -0.05em;
     }
@@ -276,23 +285,19 @@
       font-size: 13px;
     }
 
-    @media (max-width: 800px) {.hero-image {
-  justify-content: flex-start;
-  margin-top: 40px;
-}
-
-.hero-image img {
-  width: 100%;
-  max-width: 360px;
-  height: 440px;
-}
+    @media (max-width: 800px) {
 
       .nav-links a {
         display: none;
       }
 
       .hero {
-        padding: 75px 0;
+        grid-template-columns: 1fr;
+        padding: 70px 0;
+      }
+
+      .hero-image {
+        justify-content: flex-start;
       }
 
       .stats {
@@ -321,6 +326,7 @@
         gap: 8px;
       }
     }
+
   </style>
 </head>
 
@@ -329,11 +335,13 @@
 <div class="container">
 
   <nav>
+
     <a href="#" class="logo">
       ANGELO <span>AALTO</span>
     </a>
 
     <div class="nav-links">
+
       <a href="#experience">Kokemus</a>
       <a href="#skills">Osaaminen</a>
       <a href="#contact">Yhteys</a>
@@ -341,13 +349,17 @@
       <button class="language" onclick="toggleLanguage()">
         EN
       </button>
+
     </div>
+
   </nav>
 
 
+  <!-- HERO -->
+
   <header class="hero">
 
-    <div class="hero-content">
+    <div>
 
       <div class="eyebrow" id="eyebrow">
         Myynnin ammattilainen · Yrittäjä
@@ -359,30 +371,40 @@
 
       <p class="hero-text" id="heroText">
         Olen Angelo Aalto, myynnin ammattilainen ja yrittäjä.
-  Olen tehnyt myyntiä vuodesta 2016 ja yrittäjänä vuodesta 2020.
-  Vahvuuteni ovat ihmisten lukeminen, kuunteleminen,
-  tarpeiden tunnistaminen ja tehokas kommunikointi —
-  mutta ennen kaikkea tasainen tuloksenteko.
+        Olen tehnyt myyntiä vuodesta 2016 ja yrittäjänä vuodesta 2020.
+        Vahvuuteni ovat ihmisten lukeminen, kuunteleminen,
+        tarpeiden tunnistaminen ja tehokas kommunikointi —
+        mutta ennen kaikkea tasainen tuloksenteko.
       </p>
 
       <div class="buttons">
 
-        <a class="button button-primary" href="#contact" id="contactButton">
+        <a class="button button-primary" href="#contact">
           Ota yhteyttä
         </a>
 
-        <a class="button" href="#experience" id="experienceButton">
-          Tutustu kokemukseen
+        <a class="button" href="#experience">
+          Kokemus
         </a>
 
       </div>
 
     </div>
-<div class="hero-image">
-  <img src="portfolio%20kuva.png" alt="Angelo Aalto">
-</div>
+
+
+    <div class="hero-image">
+
+      <img
+        src="portfolio%20kuva.png"
+        alt="Angelo Aalto"
+      >
+
+    </div>
+
   </header>
 
+
+  <!-- STATS -->
 
   <section>
 
@@ -390,35 +412,231 @@
 
       <div class="stat">
         <span class="stat-number">10+</span>
-        <span class="stat-label" id="stat1">
-          vuotta myyntikokemusta
+        <span class="stat-label">
+          vuotta myyntiä
         </span>
       </div>
 
       <div class="stat">
         <span class="stat-number">6+</span>
-        <span class="stat-label" id="stat2">
+        <span class="stat-label">
           vuotta yrittäjänä
         </span>
       </div>
 
       <div class="stat">
-        <span class="stat-number">8 000 €</span>
-        <span class="stat-label" id="stat3">
-          paras kuukausimyynti sähkösopimuksissa
+        <span class="stat-number">Kasvu</span>
+        <span class="stat-label">
+          myynnin ja liikevaihdon kautta
         </span>
       </div>
 
       <div class="stat">
-        <span class="stat-number">Top 3–5</span>
-        <span class="stat-label" id="stat4">
-          pull-% omassa myyntitalossa
+        <span class="stat-number">Korkea</span>
+        <span class="stat-label">
+          pull-% ja tasainen tulos
         </span>
       </div>
 
     </div>
 
- 
+  </section>
+
+
+  <!-- EXPERIENCE -->
+
+  <section id="experience">
+
+    <h2 class="section-title">
+      Kokemus
+    </h2>
+
+
+    <div class="timeline-item">
+
+      <div class="timeline-year">
+        2016
+      </div>
+
+      <div>
+
+        <h3>Suomen Telecenter / Soldem</h3>
+
+        <p>
+          Aloitin myyntiurani puhelinmyynnissä.
+          Puhelin- ja nettiliittymien myyntiä.
+        </p>
+
+      </div>
+
+    </div>
+
+
+    <div class="timeline-item">
+
+      <div class="timeline-year">
+        Myöhemmin
+      </div>
+
+      <div>
+
+        <h3>Telia</h3>
+
+        <p>
+          Myymälämyyntiä ja asiakaskohtaamisia.
+          Tarpeiden tunnistamista ja ratkaisumyyntiä.
+        </p>
+
+      </div>
+
+    </div>
+
+
+    <div class="timeline-item">
+
+      <div class="timeline-year">
+        2020 →
+      </div>
+
+      <div>
+
+        <h3>Myynti Aalto · Yrittäjä</h3>
+
+        <p>
+          Siirryin myynnin alihankkijaksi ja yrittäjäksi.
+          Sen jälkeen olen työskennellyt useissa eri
+          myyntiprojekteissa ja tuotteissa.
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- SKILLS -->
+
+  <section id="skills">
+
+    <h2 class="section-title">
+      Osaaminen
+    </h2>
+
+
+    <div class="skills">
+
+      <div class="skill">
+
+        <h3>
+          Ihmisten lukeminen
+        </h3>
+
+        <p>
+          Tunnistan erilaisia asiakkaita ja mukautan
+          lähestymistapani tilanteeseen.
+        </p>
+
+      </div>
+
+
+      <div class="skill">
+
+        <h3>
+          Kommunikointi
+        </h3>
+
+        <p>
+          Vahvat puhelahjat ja kyky rakentaa luonteva
+          keskustelu nopeasti.
+        </p>
+
+      </div>
+
+
+      <div class="skill">
+
+        <h3>
+          Kuunteleminen
+        </h3>
+
+        <p>
+          Hyvä myynti alkaa kuuntelemisesta —
+          ei valmiin puheen toistamisesta.
+        </p>
+
+      </div>
+
+
+      <div class="skill">
+
+        <h3>
+          Tarpeiden tunnistaminen
+        </h3>
+
+        <p>
+          Etsin asiakkaan todellisen tarpeen ja rakennan
+          myynnin sen ympärille.
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- PRODUCTS -->
+
+  <section>
+
+    <h2 class="section-title">
+      Mitä olen myynyt?
+    </h2>
+
+    <div class="tags">
+
+      <span class="tag">Puhelin- ja nettiliittymät</span>
+      <span class="tag">Sähkösopimukset</span>
+      <span class="tag">Sähköautojen latauspisteet</span>
+      <span class="tag">Aurinkopaneelit</span>
+      <span class="tag">Ajanvaraus</span>
+      <span class="tag">Uusasiakashankinta</span>
+      <span class="tag">Puhelinmyynti</span>
+      <span class="tag">Myymälämyynti</span>
+
+    </div>
+
+  </section>
+
+
+  <!-- CONTACT -->
+
+  <section id="contact">
+
+    <div class="contact">
+
+      <h2>
+        Etsitkö myynnin tekijää?
+      </h2>
+
+      <p>
+        Olen avoin uusille työmahdollisuuksille,
+        myynnin yhteistyöprojekteille ja alihankinnalle.
+        Jos etsit tuloshakuista myynnin ammattilaista,
+        jutellaan.
+      </p>
+
+      <a
+        class="button"
+        href="mailto:angelo.aalto@gmail.com"
+      >
+        Lähetä sähköpostia
+      </a>
+
+    </div>
+
+  </section>
 
 
   <footer>
@@ -444,9 +662,9 @@ function toggleLanguage() {
 
   english = !english;
 
-  const languageButton = document.querySelector(".language");
+  const button = document.querySelector(".language");
 
-  languageButton.textContent = english ? "FI" : "EN";
+  button.textContent = english ? "FI" : "EN";
 
   if (english) {
 
@@ -459,90 +677,11 @@ function toggleLanguage() {
       "Sales that turns into results.";
 
     document.getElementById("heroText").textContent =
-      "In sales since 2016 and an entrepreneur since 2020. " +
-      "Experience in phone sales, retail sales and a range " +
-      "of different sales projects.";
-
-    document.getElementById("contactButton").textContent =
-      "Get in touch";
-
-    document.getElementById("experienceButton").textContent =
-      "View experience";
-
-    document.getElementById("stat1").textContent =
-      "years of sales experience";
-
-    document.getElementById("stat2").textContent =
-      "years as an entrepreneur";
-
-    document.getElementById("stat3").textContent =
-      "best monthly sales in electricity contracts";
-
-    document.getElementById("stat4").textContent =
-      "pull-rate ranking in my sales organization";
-
-    document.getElementById("experienceTitle").textContent =
-      "Experience";
-
-    document.getElementById("experience1").textContent =
-      "I started my sales career in phone sales, selling " +
-      "mobile and internet subscriptions and building a " +
-      "foundation in performance-driven sales.";
-
-    document.getElementById("experience2").textContent =
-      "I moved into retail sales, developing face-to-face " +
-      "customer interaction, needs discovery and " +
-      "solution-selling skills.";
-
-    document.getElementById("experience3").textContent =
-      "I had the opportunity to work as a sales subcontractor " +
-      "and became an entrepreneur. Since then I have worked " +
-      "across multiple products and sales projects.";
-
-    document.getElementById("skillsTitle").textContent =
-      "Strengths";
-
-    document.getElementById("skill1Title").textContent =
-      "Reading people";
-
-    document.getElementById("skill1Text").textContent =
-      "I recognize different customer types and adapt " +
-      "my approach to the situation.";
-
-    document.getElementById("skill2Title").textContent =
-      "Communication";
-
-    document.getElementById("skill2Text").textContent =
-      "Strong verbal communication and the ability to " +
-      "build a natural conversation quickly.";
-
-    document.getElementById("skill3Title").textContent =
-      "Listening";
-
-    document.getElementById("skill3Text").textContent =
-      "Good sales starts with listening — not repeating a script.";
-
-    document.getElementById("skill4Title").textContent =
-      "Needs discovery";
-
-    document.getElementById("skill4Text").textContent =
-      "I identify the customer's real need and build " +
-      "the offer around it.";
-
-    document.getElementById("productsTitle").textContent =
-      "What I have sold";
-
-    document.getElementById("contactTitle").textContent =
-      "Looking for a sales professional?";
-
-    document.getElementById("contactText").textContent =
-      "I am open to new career opportunities as well as " +
-      "sales partnerships and subcontracting projects. " +
-      "If you are looking for a performance-driven salesperson, " +
-      "let's talk.";
-
-    document.getElementById("emailButton").textContent =
-      "Send an email";
+      "I'm Angelo Aalto, a sales professional and entrepreneur. " +
+      "I've been working in sales since 2016 and as an entrepreneur " +
+      "since 2020. My strengths are understanding people, listening, " +
+      "identifying needs and communicating effectively — above all, " +
+      "consistent performance.";
 
   } else {
 
