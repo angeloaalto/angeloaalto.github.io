@@ -8,7 +8,7 @@
 
   <meta
     name="description"
-    content="Angelo Aalto — Myynnin ammattilainen ja yrittäjä."
+    content="Angelo Aalto — Myynnin ammattilainen ja yrittäjä. Myyntiä, uusasiakashankintaa, digitaalisten palveluiden ja AI-ratkaisujen myyntiä."
   >
 
   <style>
@@ -155,47 +155,21 @@
       font-size: 19px;
     }
 
-    .buttons {
+    /* IMAGE */
+
+    .hero-image {
       display: flex;
-
-      gap: 12px;
-
-      margin-top: 34px;
+      justify-content: center;
+      align-items: center;
     }
 
-    .button {
-      display: inline-block;
-
-      padding: 13px 19px;
-
-      border: 1px solid var(--line);
-      border-radius: 7px;
-
-      font-weight: 700;
+    .hero-image img {
+      width: 220px;
+      height: auto;
+      display: block;
+      border-radius: 50%;
     }
 
-    .button-primary {
-      background: var(--accent);
-
-      color: #0a0a0a;
-
-      border-color: var(--accent);
-    }
-
-  /* IMAGE */
-
-.hero-image {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.hero-image img {
-  width: 220px;
-  height: auto;
-  display: block;
-  border-radius: 50%;
-}
     /* SECTIONS */
 
     section {
@@ -289,9 +263,9 @@
       color: var(--muted);
     }
 
-    /* MITÄ TUON MYYNTIIN */
+    /* MIHIN VOIT PALKATA MINUT */
 
-    .sales-skills {
+    .services {
       display: grid;
 
       grid-template-columns:
@@ -300,23 +274,31 @@
       border: 1px solid var(--line);
     }
 
-    .sales-skill {
-      padding: 26px 28px;
+    .service {
+      padding: 30px;
 
       border-right: 1px solid var(--line);
       border-bottom: 1px solid var(--line);
     }
 
-    .sales-skill:nth-child(2n) {
+    .service:nth-child(2n) {
       border-right: none;
     }
 
-    .sales-skill:nth-last-child(-n+2) {
+    .service:nth-last-child(-n+2) {
       border-bottom: none;
     }
 
-    .sales-skill h3 {
-      font-size: 20px;
+    .service h3 {
+      margin-bottom: 12px;
+
+      font-size: 23px;
+    }
+
+    .service p {
+      color: var(--muted);
+
+      font-size: 15px;
     }
 
     /* VAHVUUDET */
@@ -347,26 +329,6 @@
 
     .strength h3 {
       font-size: 21px;
-    }
-
-    /* MYYNNIN YMPÄRISTÖT */
-
-    .tags {
-      display: flex;
-
-      flex-wrap: wrap;
-
-      gap: 10px;
-    }
-
-    .tag {
-      padding: 11px 16px;
-
-      border: 1px solid var(--line);
-
-      border-radius: 999px;
-
-      color: var(--muted);
     }
 
     /* YHTEISTYÖT */
@@ -438,7 +400,15 @@
     }
 
     .contact .button {
-      border-color: #0a0a0a;
+      display: inline-block;
+
+      padding: 13px 19px;
+
+      border: 1px solid #0a0a0a;
+
+      border-radius: 7px;
+
+      font-weight: 700;
     }
 
     /* FOOTER */
@@ -473,6 +443,10 @@
         justify-content: flex-start;
       }
 
+      .hero-image img {
+        width: 220px;
+      }
+
       .stats {
         grid-template-columns:
           repeat(2, 1fr);
@@ -487,20 +461,20 @@
         border-right: none;
       }
 
-      .sales-skills {
+      .services {
         grid-template-columns: 1fr;
       }
 
-      .sales-skill {
+      .service {
         border-right: none;
       }
 
-      .sales-skill:nth-last-child(-n+2) {
+      .service:nth-last-child(-n+2) {
         border-bottom:
           1px solid var(--line);
       }
 
-      .sales-skill:last-child {
+      .service:last-child {
         border-bottom: none;
       }
 
@@ -562,8 +536,8 @@
           Kokemus
         </a>
 
-        <a href="#skills">
-          Osaaminen
+        <a href="#services">
+          Palvelut
         </a>
 
         <a href="#contact">
@@ -594,8 +568,8 @@
         </h1>
 
         <p class="hero-text">
-  Autan yrityksiä kasvattamaan myyntiä ja liikevaihtoa.
-</p>
+          Autan yrityksiä kasvattamaan myyntiä ja liikevaihtoa.
+        </p>
 
       </div>
 
@@ -603,9 +577,8 @@
       <div class="hero-image">
 
         <img
-  src="portfolio%20kuva.png"
-  alt="Angelo Aalto"
->
+          src="portfolio%20kuva.png"
+          alt="Angelo Aalto"
         >
 
       </div>
@@ -750,84 +723,66 @@
     </section>
 
 
-    <!-- YHTEISTYÖT -->
+    <!-- MIHIN VOIT PALKATA MINUT -->
 
-    <section>
-
-      <h2 class="section-title">
-        Yhteistyöt
-      </h2>
-
-      <p class="collaborations">
-        Fortum · Telia · Nordic Green Energy · Kaamos Sähkö · Oomi Energia
-      </p>
-
-    </section>
-
-
-    <!-- MITÄ TUON MYYNTIIN -->
-
-    <section id="skills">
+    <section id="services">
 
       <h2 class="section-title">
-        Mitä tuon myyntiin
+        Mihin voit palkata minut
       </h2>
 
 
-      <div class="sales-skills">
+      <div class="services">
 
-        <div class="sales-skill">
+        <div class="service">
+
           <h3>
-            Uusasiakashankinta
+            Myyntiin
           </h3>
+
+          <p>
+            Uusasiakashankinta · B2B & B2C · Kylmäsoitto · Ajanvaraus · Asiakkuuksien rakentaminen · Myyntiprojektit
+          </p>
+
         </div>
 
-        <div class="sales-skill">
+
+        <div class="service">
+
           <h3>
-            B2B & B2C-myynti
+            Digitaalisten palveluiden myyntiin
           </h3>
+
+          <p>
+            Nettisivut · Verkkopalvelut · Digitaaliset ratkaisut · Yrityspalvelut
+          </p>
+
         </div>
 
-        <div class="sales-skill">
+
+        <div class="service">
+
           <h3>
-            Kylmäsoitto
+            Digitaaliseen markkinointiin
           </h3>
+
+          <p>
+            Liidien hankinta · Asiakashankinta · Kampanjat · Digitaalinen näkyvyys
+          </p>
+
         </div>
 
-        <div class="sales-skill">
-          <h3>
-            Ratkaisumyynti
-          </h3>
-        </div>
 
-        <div class="sales-skill">
-          <h3>
-            Tarpeiden tunnistaminen
-          </h3>
-        </div>
+        <div class="service">
 
-        <div class="sales-skill">
           <h3>
-            Asiakashoito & asiakkuuksien rakentaminen
+            AI-ratkaisujen myyntiin
           </h3>
-        </div>
 
-        <div class="sales-skill">
-          <h3>
-            Ajanvaraus & tapaamisten sopiminen
-          </h3>
-        </div>
+          <p>
+            Chatbotit · Automaatio · AI-ratkaisut · Yritysten tekoälypalvelut
+          </p>
 
-        <div class="sales-skill">
-          <h3>
-            Business-tapaamiset
-          </h3>
-        </div>
-
-        <div class="sales-skill">
-          <h3>
-            Puhelin- ja kasvokkainen myynti
-          </h3>
         </div>
 
       </div>
@@ -887,6 +842,21 @@
     </section>
 
 
+    <!-- YHTEISTYÖT -->
+
+    <section>
+
+      <h2 class="section-title">
+        Yhteistyöt
+      </h2>
+
+      <p class="collaborations">
+        Fortum · Telia · Nordic Green Energy · Kaamos Sähkö · Oomi Energia
+      </p>
+
+    </section>
+
+
     <!-- STATEMENT -->
 
     <section class="statement">
@@ -913,8 +883,8 @@
       <div class="contact">
 
         <h2>
-  Etsitkö myynnin ammattilaista?
-</h2>
+          Onko sinulla tuote tai palvelu, joka tarvitsee myyjän?
+        </h2>
 
         <a
           href="mailto:angelo.aalto@gmail.com"
