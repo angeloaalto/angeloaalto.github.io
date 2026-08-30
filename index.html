@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="fi">
 <head>
@@ -12,7 +13,6 @@
   >
 
   <style>
-
     :root {
       --bg: #0a0a0a;
       --text: #f5f5f5;
@@ -45,11 +45,7 @@
     }
 
     .container {
-      width: min(
-        var(--max-width),
-        calc(100% - 40px)
-      );
-
+      width: min(var(--max-width), calc(100% - 40px));
       margin: 0 auto;
     }
 
@@ -57,11 +53,9 @@
 
     nav {
       height: 80px;
-
       display: flex;
       align-items: center;
       justify-content: space-between;
-
       border-bottom: 1px solid var(--line);
     }
 
@@ -79,9 +73,7 @@
       display: flex;
       align-items: center;
       gap: 28px;
-
       color: var(--muted);
-
       font-size: 14px;
     }
 
@@ -91,13 +83,10 @@
 
     .language {
       padding: 7px 13px;
-
       border: 1px solid var(--line);
       border-radius: 999px;
-
       background: transparent;
       color: var(--text);
-
       cursor: pointer;
       font-size: 13px;
     }
@@ -106,52 +95,32 @@
 
     .hero {
       min-height: 680px;
-
       display: grid;
-
-      grid-template-columns:
-        1.25fr
-        0.75fr;
-
+      grid-template-columns: 1.25fr 0.75fr;
       gap: 70px;
-
       align-items: center;
-
       padding: 90px 0;
     }
 
     .eyebrow {
       color: var(--accent);
-
       font-size: 12px;
       font-weight: 700;
-
       text-transform: uppercase;
       letter-spacing: 0.12em;
     }
 
     h1 {
       max-width: 800px;
-
       margin: 22px 0 30px;
-
-      font-size:
-        clamp(
-          54px,
-          8vw,
-          90px
-        );
-
+      font-size: clamp(54px, 8vw, 90px);
       line-height: 0.94;
-
       letter-spacing: -0.07em;
     }
 
     .hero-text {
       max-width: 620px;
-
       color: var(--muted);
-
       font-size: 19px;
     }
 
@@ -176,17 +145,13 @@
 
     section {
       padding: 90px 0;
-
       border-top: 1px solid var(--line);
     }
 
     .section-title {
       margin-bottom: 45px;
-
       font-size: 48px;
-
       line-height: 1;
-
       letter-spacing: -0.05em;
     }
 
@@ -194,16 +159,12 @@
 
     .stats {
       display: grid;
-
-      grid-template-columns:
-        repeat(4, 1fr);
-
+      grid-template-columns: repeat(4, 1fr);
       border: 1px solid var(--line);
     }
 
     .stat {
       padding: 30px;
-
       border-right: 1px solid var(--line);
     }
 
@@ -213,21 +174,15 @@
 
     .stat-number {
       display: block;
-
       font-size: 28px;
-
       font-weight: 800;
-
       letter-spacing: -0.05em;
     }
 
     .stat-label {
       display: block;
-
       margin-top: 7px;
-
       color: var(--muted);
-
       font-size: 14px;
     }
 
@@ -235,16 +190,12 @@
 
     .services {
       display: grid;
-
-      grid-template-columns:
-        repeat(2, 1fr);
-
+      grid-template-columns: repeat(2, 1fr);
       border: 1px solid var(--line);
     }
 
     .service {
       padding: 32px;
-
       border-right: 1px solid var(--line);
       border-bottom: 1px solid var(--line);
     }
@@ -259,13 +210,11 @@
 
     .service h3 {
       margin-bottom: 12px;
-
       font-size: 23px;
     }
 
     .service p {
       color: var(--muted);
-
       font-size: 15px;
     }
 
@@ -273,16 +222,12 @@
 
     .strengths {
       display: grid;
-
-      grid-template-columns:
-        repeat(2, 1fr);
-
+      grid-template-columns: repeat(2, 1fr);
       border: 1px solid var(--line);
     }
 
     .strength {
       padding: 28px;
-
       border-right: 1px solid var(--line);
       border-bottom: 1px solid var(--line);
     }
@@ -303,9 +248,7 @@
 
     .collaborations {
       color: var(--muted);
-
       font-size: 20px;
-
       line-height: 1.8;
     }
 
@@ -313,33 +256,24 @@
 
     .timeline-item {
       display: grid;
-
-      grid-template-columns:
-        160px
-        1fr;
-
+      grid-template-columns: 160px 1fr;
       gap: 35px;
-
       padding: 30px 0;
-
       border-bottom: 1px solid var(--line);
     }
 
     .timeline-year {
       color: var(--accent);
-
       font-weight: 800;
     }
 
     .timeline-item h3 {
       margin-bottom: 8px;
-
       font-size: 23px;
     }
 
     .timeline-item p {
       max-width: 700px;
-
       color: var(--muted);
     }
 
@@ -347,24 +281,14 @@
 
     .statement {
       padding: 130px 0;
-
       text-align: center;
     }
 
     .statement h2 {
       max-width: 900px;
-
       margin: 0 auto;
-
-      font-size:
-        clamp(
-          48px,
-          8vw,
-          88px
-        );
-
+      font-size: clamp(48px, 8vw, 88px);
       line-height: 0.95;
-
       letter-spacing: -0.07em;
     }
 
@@ -376,40 +300,24 @@
 
     .contact {
       padding: 60px;
-
       background: var(--accent);
-
       color: #0a0a0a;
-
       border-radius: 16px;
     }
 
     .contact h2 {
       max-width: 800px;
-
       margin-bottom: 30px;
-
-      font-size:
-        clamp(
-          42px,
-          6vw,
-          68px
-        );
-
+      font-size: clamp(42px, 6vw, 68px);
       line-height: 1;
-
       letter-spacing: -0.06em;
     }
 
     .contact .button {
       display: inline-block;
-
       padding: 13px 19px;
-
       border: 1px solid #0a0a0a;
-
       border-radius: 7px;
-
       font-weight: 700;
     }
 
@@ -417,13 +325,9 @@
 
     footer {
       display: flex;
-
       justify-content: space-between;
-
       padding: 35px 0;
-
       color: var(--muted);
-
       font-size: 13px;
     }
 
@@ -437,7 +341,6 @@
 
       .hero {
         grid-template-columns: 1fr;
-
         padding: 70px 0;
       }
 
@@ -451,13 +354,11 @@
       }
 
       .stats {
-        grid-template-columns:
-          repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr);
       }
 
       .stat {
-        border-bottom:
-          1px solid var(--line);
+        border-bottom: 1px solid var(--line);
       }
 
       .stat:nth-child(2) {
@@ -473,8 +374,7 @@
       }
 
       .service:nth-last-child(-n+2) {
-        border-bottom:
-          1px solid var(--line);
+        border-bottom: 1px solid var(--line);
       }
 
       .service:last-child {
@@ -490,8 +390,7 @@
       }
 
       .strength:nth-last-child(-n+2) {
-        border-bottom:
-          1px solid var(--line);
+        border-bottom: 1px solid var(--line);
       }
 
       .strength:last-child {
@@ -500,7 +399,6 @@
 
       .timeline-item {
         grid-template-columns: 1fr;
-
         gap: 8px;
       }
 
@@ -510,20 +408,16 @@
 
       footer {
         flex-direction: column;
-
         gap: 8px;
       }
-
     }
 
   </style>
 </head>
 
-
 <body>
 
   <div class="container">
-
 
     <!-- NAV -->
 
@@ -556,7 +450,7 @@
     </nav>
 
 
-    <!-- HERO -->
+    <!-- 1. HERO -->
 
     <header class="hero">
 
@@ -576,7 +470,6 @@
 
       </div>
 
-
       <div class="hero-image">
 
         <img
@@ -589,14 +482,13 @@
     </header>
 
 
-    <!-- NÄYTÖT -->
+    <!-- 2. NÄYTÖT -->
 
     <section>
 
       <div class="stats">
 
         <div class="stat">
-
           <span class="stat-number">
             10 000 €+ / kk
           </span>
@@ -604,12 +496,9 @@
           <span class="stat-label">
             Myyntiä kylmään listaan
           </span>
-
         </div>
 
-
         <div class="stat">
-
           <span class="stat-number">
             10+ vuotta
           </span>
@@ -617,12 +506,9 @@
           <span class="stat-label">
             Myyntikokemusta
           </span>
-
         </div>
 
-
         <div class="stat">
-
           <span class="stat-number">
             6+ vuotta
           </span>
@@ -630,12 +516,9 @@
           <span class="stat-label">
             Yrittäjänä
           </span>
-
         </div>
 
-
         <div class="stat">
-
           <span class="stat-number">
             Tasaisesti kärkitasolla
           </span>
@@ -643,7 +526,6 @@
           <span class="stat-label">
             Läpi myyntiuran
           </span>
-
         </div>
 
       </div>
@@ -651,14 +533,13 @@
     </section>
 
 
-    <!-- MIHIN VOIT PALKATA MINUT -->
+    <!-- 3. MIHIN VOIT PALKATA MINUT -->
 
     <section id="services">
 
       <h2 class="section-title">
         Mihin voit palkata minut
       </h2>
-
 
       <div class="services">
 
@@ -674,7 +555,6 @@
 
         </div>
 
-
         <div class="service">
 
           <h3>
@@ -687,7 +567,6 @@
 
         </div>
 
-
         <div class="service">
 
           <h3>
@@ -699,7 +578,6 @@
           </p>
 
         </div>
-
 
         <div class="service">
 
@@ -718,14 +596,13 @@
     </section>
 
 
-    <!-- VAHVUUDET -->
+    <!-- 4. VAHVUUDET -->
 
     <section>
 
       <h2 class="section-title">
         Vahvuudet
       </h2>
-
 
       <div class="strengths">
 
@@ -770,7 +647,7 @@
     </section>
 
 
-    <!-- YHTEISTYÖT -->
+    <!-- 5. YHTEISTYÖT -->
 
     <section>
 
@@ -785,14 +662,13 @@
     </section>
 
 
-    <!-- KOKEMUS -->
+    <!-- 6. KOKEMUS -->
 
     <section id="experience">
 
       <h2 class="section-title">
         Kokemus
       </h2>
-
 
       <div class="timeline-item">
 
@@ -814,7 +690,6 @@
 
       </div>
 
-
       <div class="timeline-item">
 
         <div class="timeline-year">
@@ -834,7 +709,6 @@
         </div>
 
       </div>
-
 
       <div class="timeline-item">
 
@@ -859,26 +733,22 @@
     </section>
 
 
-    <!-- STATEMENT -->
+    <!-- 7. STATEMENT -->
 
     <section class="statement">
 
       <h2>
-
         Tuote voi vaihtua.
-
         <br>
-
         <span>
           Myyntiosaaminen ei.
         </span>
-
       </h2>
 
     </section>
 
 
-    <!-- CONTACT -->
+    <!-- 8. CTA -->
 
     <section id="contact">
 
@@ -914,8 +784,8 @@
 
     </footer>
 
-
   </div>
 
 </body>
 </html>
+```
